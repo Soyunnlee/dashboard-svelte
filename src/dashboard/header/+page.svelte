@@ -55,7 +55,7 @@
 						<div class="font-medium">
 							<!-- 라우터 현재 위치 나타내는 기능 -->
 							{$page.route.id.split('/').pop().charAt(0).toUpperCase() +
-								$page.route.id.split('/').pop().slice(1)}
+								$page.route.id.split('/').pop().slice(1)} hosting test
 						</div>
 					</div>
 
