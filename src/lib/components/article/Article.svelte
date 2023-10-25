@@ -3,7 +3,7 @@
 	import Description from './Description.svelte';
 
 	export let title: string;
-	export let info: string;
+	export let info: string | undefined = undefined;
 	export let code: string;
 
 	interface DescriptionItem {

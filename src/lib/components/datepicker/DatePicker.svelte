@@ -21,7 +21,7 @@
 
 	function onDateSelectCallback(beginDate: Date, endDate: Date) {
 		calendarBeginDate = beginDate;
-		calendarEndDate = endDate;
+		calendarEndDate = endDate;datepicker
 
 		onDateSelect(periodType, beginDate, endDate);
 	}

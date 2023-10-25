@@ -1,6 +1,6 @@
 <script lang="ts">
 	//#region
-	import { Icon, Bars4, Bell, User, Sun, Moon } from 'svelte-hero-icons';
+	import { Icon, Bars4 } from 'svelte-hero-icons';
 	import { isSlideMenuOpen, isDarkMode } from '../provider/store';
 	// import menuItem from '../slidemenu/menuitem';
 
@@ -55,7 +55,7 @@
 						<div class="font-medium">
 							<!-- 라우터 현재 위치 나타내는 기능 -->
 							{$page.route.id.split('/').pop().charAt(0).toUpperCase() +
-								$page.route.id.split('/').pop().slice(1)} hosting test
+								$page.route.id.split('/').pop().slice(1)}
 						</div>
 					</div>
 

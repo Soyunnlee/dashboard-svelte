@@ -51,7 +51,7 @@
 	</div>
 </article> -->
 
-<div class="h-[calc(100vh-60px)] overflow-y-scroll bg-[#0E0E0E] px-8 text-white">
+<div class="h-[calc(100vh-60px)] overflow-y-scroll dark:bg-[#0E0E0E] px-8">
 	<section class="mb-3 px-3 py-5">
 		<!-- Intro -->
 		<div class="mb-8">

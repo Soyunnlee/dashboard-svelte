@@ -16,7 +16,7 @@
 </svelte:head>
 
 <!-- prettier-ignore -->
-<div class="p-4 px-8 max-w-full h-[calc(100vh-60px)] overflow-auto text-white bg-[#0E0E0E] space-y-3">
+<div class="p-4 px-8 max-w-full h-[calc(100vh-60px)] overflow-auto text-white dark:bg-[#0E0E0E] space-y-3">
 	<!-- 행 1 -->
 	<section class="w-full h-[30%] flex space-x-3 overflow-hidden">
 		<!-- 영역 1 -->

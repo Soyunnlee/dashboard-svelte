@@ -1,13 +1,15 @@
-export const blueBtn = {
-	title: '#1. Blue Button ',
-	info: 'Login, Clear , Susses 등 <br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.',
-	code: `<button
-  style="background: linear-gradient(270deg, #66a6ff 0%, #667eea 98.8%);"
-  class="rounded from-cyan-500 to-blue-500 px-4 py-1 hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
->
-  Button
-</button>
-  `,
+export const baseCard = {
+	title: '# 1. BaseCard',
+	info: '',
+	code: `<article class="h-44 w-60 rounded-xl bg-[#141517] shadow-[inset_0_0_10px_#4B5563] shadow-gray-600 2xl:shadow-[inset_0_0_10px_#4B5563]" >
+  <div class="py-2.5" style="background: radial-gradient(circle, rgba(45,48,52,0.7399553571428572) 4%, rgba(20,21,23,0) 100%, rgba(20,21,23,0) 100%);" >
+  <!-- Title -->
+   <div class="flex w-full items-center justify-center">
+    <p class=" text-base font-medium">Card title</p>
+   </div>
+  // Content
+  </div>
+ </article>`,
 	discription: [
 		// { name: 'name1', info: 'ddd' },
 		// { name: 'name2', info: 'xxx' }
@@ -15,7 +17,7 @@ export const blueBtn = {
 };
 
 export const redBtn = {
-	title: '#1-2. Red Button',
+	title: '#1. Red Button',
 	info: '주의 , Resister , 경고 등<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.',
 	code: `<button
   class="rounded bg-red-600 px-4 py-1 hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,02)]"
@@ -30,7 +32,7 @@ export const redBtn = {
 };
 
 export const orangeBtn = {
-	title: '#1-3. Orange Button',
+	title: '#1. Orange Button',
 	info: 'Reset , 초기화 ,정지 등<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.',
 	code: `<button
  class="rounded px-4 py-1 hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,02)]"
