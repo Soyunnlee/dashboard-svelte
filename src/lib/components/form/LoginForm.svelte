@@ -2,7 +2,7 @@
 	//#region Import
 	import { enhance } from '$app/forms';
 	import { isDarkMode } from '../../../dashboard/provider/store';
-	import BaseBtn from '../button/BaseBtn.svelte';
+	import BaseBtn from '../button/ButtonBase.svelte';
 	//#endregion
 
 	//#region State
