@@ -16,23 +16,22 @@
 
 <!-- Form Background Color -->
 <div
-	class="rounded-xl bg-gray-700 px-16 py-10 shadow-lg backdrop-blur-md"
+	class="rounded-xl bg-gray-800 px-16 py-10 shadow-lg backdrop-blur-md text-lg text-white"
 	style="min-width:450px; width:31%; max-width:510px"
 >
 	<!-- Form Text Size, Color -->
-	<div class="text-lg text-white">
-		<form use:enhance method="POST">
-			<div class="my-12 text-center">
-				<img
-					class="mx-auto w-72"
-					src="https://i.esdrop.com/d/f/KRQCESGJO3/POBFgSGKVB.png"
-					alt="logo"
-				/>
-			</div>
-			<p class="mb-4">Please login to your account</p>
+	<form use:enhance method="POST">
+		<!-- src="https://i.esdrop.com/d/f/KRQCESGJO3/9kUoRExaf7.png" -->
+		<!-- Logo -->
+		<div class=" flex justify-center">
+			<img class="my-12 w-72" src="https://i.esdrop.com/d/f/KRQCESGJO3/JVY3MWknS9.png" alt="logo" />
+		</div>
 
+		<p class="mb-4">Please login to your account</p>
+		<!-- Input -->
+		<div class="space-y-5 mb-12">
 			<!-- Id Input -->
-			<div class="relative mb-5 rounded-md outline outline-1 outline-gray-300">
+			<div class="relative mb-0 rounded-md outline outline-1 outline-gray-300">
 				<input
 					placeholder=" "
 					type="text"
@@ -46,7 +45,7 @@
 				>
 			</div>
 			<!-- PassWord Input -->
-			<div class="relative mb-5 rounded-md outline outline-1 outline-gray-300">
+			<div class="relative mb-0 rounded-md outline outline-1 outline-gray-300">
 				<input
 					placeholder=" "
 					type="password"
@@ -59,44 +58,28 @@
 				>
 			</div>
 
-			<!-- <LABEL_INPUT placeholder="ID" style="labelinput" type="text" inputName="userId" />
-				<LABEL_INPUT
-					placeholder="Password"
-					style="labelinput"
-					type="password"
-					inputName="password"
-				/> -->
+			<!-- LoginBtn -->
+			<button
+				type="button"
+				class="w-full mb-5 text-sm py-2.5 rounded"
+				style="background: linear-gradient(270deg, #66a6ff 0%, #667eea 98.8%)">LOG IN</button
+			>
 
-			<!-- {#if form?.error}
-					<div
-						class="text-base text-pink-700"
-						style="background: #f8d7da;border-color: #f5c6cb;padding: 0.5rem;border-radius: 0.5rem;margin-bottom: 0.7rem;padding-left:1rem;"
-					>
-						{form.error}
-					</div>
-				{/if} -->
-
-			<!-- prettier-ignore -->
-			<div class="mb-12 pt-1 pb-1 text-center ">
-					<!-- 로그인 버튼 -->	
-					<button type="submit" class="loginbtn" style="background: linear-gradient(270deg, #66a6ff 0%, #667eea 98.8%)">LOG IN</button>
-					<!-- <ROUND_BTN style="loginbtn" caption="LOG IN" type="submit" onClick={null} /> -->
-
-					<a href="#!">Forgot password?</a>
-				</div>
-
-			<div class="flex items-center justify-between pb-6">
-				<p class="mb-0 mr-2">Don't have an account?</p>
-				<!-- 레지스터 버튼 -->
-				<button
-					type="submit"
-					class="inline-block rounded bg-red-600 bg-opacity-80 px-6 py-2.5 text-sm font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-red-600 hover:bg-red-700"
-					>RESISTER</button
-				>
-				<!-- <ROUND_BTN style="registerbtn" caption="REGISTER" type="submit" onClick={null} /> -->
+			<div class="text-center">
+				<a href="#!">Forgot password?</a>
 			</div>
-		</form>
-	</div>
+		</div>
+
+		<div class="flex items-center justify-between pb-6">
+			<p class="">Don't have an account?</p>
+			<!-- 레지스터 버튼 -->
+			<button
+				type="button"
+				class="px-6 py-2.5 text-sm rounded bg-red-600 text-white hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
+				>RESISTER</button
+			>
+		</div>
+	</form>
 </div>
 
 <style lang="postcss">

@@ -1,115 +1,95 @@
-export const baseCard = {
-	title: '# 1. BaseCard',
-	info: '',
-	code: `<article class="h-44 w-60 rounded-xl bg-[#141517] shadow-[inset_0_0_10px_#4B5563] shadow-gray-600 2xl:shadow-[inset_0_0_10px_#4B5563]" >
-  <div class="py-2.5" style="background: radial-gradient(circle, rgba(45,48,52,0.7399553571428572) 4%, rgba(20,21,23,0) 100%, rgba(20,21,23,0) 100%);" >
-  <!-- Title -->
-   <div class="flex w-full items-center justify-center">
+export const cardWrap = {
+	title: '# 1. CardWrap',
+	info: 'Bg Color 와 대비되는 InerShadow Color 와 Effect 를 사용하여 단일요소의 목적을 명확히 합니다.',
+	code: `<article 
+class="rounded-xl bg-white dark:bg-[#141517] dark:shadow-[inset_0_0_10px_#4B5563] dark:shadow-gray-600 shadow-[0_3px_10px_rgb(0,0,0,0.2)] h-56 w-72"
+/>`,
+	discription: [
+		// { name: 'name1', info: 'ddd' },
+		// { name: 'name2', info: 'xxx' }
+	]
+};
+
+export const titleCard = {
+	title: '# 2. Title Card',
+	info: 'Title 이 있는 카드 입니다.',
+	code: `<article class="h-56 w-72 rounded-xl dark:bg-[#141517] dark:shadow-inner dark:shadow-gray-600 dark:2xl:shadow-[inset_0_0_10px_#4B5563] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex flex-col">
+ <!-- Title -->
+ <div class="py-4 border-b border-[##DBDBDB] dark:border-none"
+ style={$isDarkMode ? 
+ 'background: radial-gradient(circle, rgba(45,48,52,0.7399553571428572) 4%, rgba(20,21,23,0) 50%, rgba(20,21,23,0) 100%);'
+  : ''} >
+  <div class="flex w-full items-center justify-center">
+  	<p class=" text-base font-medium">Card title</p>
+  </div>
+ </div>
+ <!-- Slot 영역 -->
+ <div class="h-full flex items-center justify-center">Content</div>
+</article>`,
+	discription: [
+		{ name: 'isDarkMode', info: '전역변수 에 따른 Css Stylte 변경' }
+		// { name: 'name2', info: 'xxx' }
+	]
+};
+
+export const readabilityCard = {
+	title: '# 2-1. Readability Card',
+	info: 'Theme 와 기본 CardWrap Color 를 고려해 조화를 이루면서도 시각적으로 구별될 수 있는 가독성 카드 입니다.',
+	code: `<article class="rounded-xl dark:shadow-inner dark:shadow-gray-600 dark:2xl:shadow-[inset_0_0_10px_#4B5563] shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-[#EEF8FF] dark:bg-[#0a1631] h-56 w-72 flex flex-col">
+ <!-- Title -->
+ <div class="shadow-[inset_-4px_-4px_20px_#E2EEFB] dark:shadow-none border-b border-indigo-100 dark:border-none py-4"
+ style={$isDarkMode ? 
+ 'background: radial-gradient(circle, rgba(45,48,52,0.7399553571428572) 4%, rgba(20,21,23,0) 60%, rgba(20,21,23,0) 100%);'
+  : ''} >  
+  <div class="flex justify-center items-center w-full">
     <p class=" text-base font-medium">Card title</p>
-   </div>
-  // Content
   </div>
- </article>`,
+ </div>
+ <!-- Slot 영역 -->
+ <div class="h-full flex items-center justify-center">Content</div>
+</article>`,
 	discription: [
-		// { name: 'name1', info: 'ddd' },
+		{ name: 'isDarkMode', info: '전역변수 에 따른 Css Stylte 변경' }
 		// { name: 'name2', info: 'xxx' }
 	]
 };
 
-export const redBtn = {
-	title: '#1. Red Button',
-	info: '주의 , Resister , 경고 등<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.',
-	code: `<button
-  class="rounded bg-red-600 px-4 py-1 hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,02)]"
->
-  Button
-</button>
-  `,
+export const designCardCol = {
+	title: '# 3. Design Card_Col',
+	info: 'Design 요소가 들어가 있는 카드 입니다.',
+	code: `<article class="rounded-xl flex justify-center h-56 w-56 shadow-[0_5px_10px_rgb(0,0,0,0.2)]">
+ <div class="rounded-xl relative overflow-hidden border-gray-100 w-full h-full bg-white"
+ style={$isDarkMode
+ ? 'background: linear-gradient(106.15deg, #282828 1.61%, #0B0B0B 93.48%)'
+ : 'background: linear-gradient(106.15deg, #F5FAFF 0.5%, #ffffff 93.48%)'} >
+ <!-- Content -->
+  <div class=" h-full w-full flex justify-center items-center">Content</div>
+ <!-- UnderLine -->
+ <span class="absolute inset-x-0 bottom-0 h-1.5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-opacity-100" />
+ </div>
+</article>`,
 	discription: [
-		// { name: 'name1', info: 'ddd' },
+		{ name: 'isDarkMode', info: '전역변수 에 따른 Css Stylte 변경' }
 		// { name: 'name2', info: 'xxx' }
 	]
 };
 
-export const orangeBtn = {
-	title: '#1. Orange Button',
-	info: 'Reset , 초기화 ,정지 등<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.',
-	code: `<button
- class="rounded px-4 py-1 hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,02)]"
- style="background: linear-gradient(278.92deg, #c26b0f 0%, #d96b30 100%);">
- Button
-</button>
-  `,
+export const designCardRow = {
+	title: '# 3. Design Card_Row',
+	info: 'Design 요소가 들어가 있는 카드 입니다.',
+	code: `<article class="rounded-xl flex justify-center h-40 w-64 shadow-[0_5px_10px_rgb(0,0,0,0.2)]" >
+ <div class="rounded-xl relative overflow-hidden border-gray-100 w-full h-full bg-white"
+  style={$isDarkMode
+   ? 'background: linear-gradient(106.15deg, #282828 1.61%, #0B0B0B 93.48%)'
+   : 'background: linear-gradient(106.15deg, #F5FAFF 0.5%, #ffffff 93.48%)'} >
+  <!-- Line -->
+   <span class="absolute inset-x-[97%] h-full w-3 bg-gradient-to-t from-purple-900 via-blue-500 to-green-500 bg-opacity-100" />
+  <!-- Content -->
+  <div class=" h-full w-full flex justify-center items-center">Content</div>
+ </div>
+</article>`,
 	discription: [
-		// { name: 'name1', info: 'ddd' },
-		// { name: 'name2', info: 'xxx' }
-	]
-};
-
-export const alarmBtn = {
-	title: '#2. Alarm Btn_Dot',
-	info: '알람 숫자가 없는 Btn<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.<br/><b><i>npm i svelte-hero-icons</i></b>',
-	code: `<script>
-  import { Icon, Bars3 } from 'svelte-hero-icons';
-</script>
-
-<button type="button" class="relative">
-  <div class="absolute -left-1 -top-0.5 rounded-full bg-red-700 px-1 py-1" />
-
-  <div class="rounded border border-gray-700 px-2 py-0.5">
-    <Icon class="h-6 w-5 stroke-2 text-indigo-600 2xl:h-7 2xl:w-8" src={Bars3} />
-  </div>
-</button>
-`,
-	discription: [
-		// { name: 'name1', info: 'ddd' },
-		// { name: 'name2', info: 'xxx' }
-	]
-};
-
-export const alarmNumberBtn = {
-	title: '#2. Alarm Btn_Number',
-	info: '알람 숫자가 있는 Btn<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.<br/><b><i>npm i svelte-hero-icons</i></b>',
-	code: `<script>
-  import { Icon, EllipsisHorizontal } from 'svelte-hero-icons';
-</script>
-
-<button type="button" class="relative">
-  <div class="absolute -left-2 -top-1 inline-flex items-center justify-center rounded bg-red-700 px-0.5 py-0.5 text-xs leading-none text-white">
-    12
-  </div>
-
-  <div class="rounded border border-gray-700 px-1.5 py-0.5">
-    <Icon class="h-6 w-6  text-indigo-500 " src={EllipsisHorizontal} />
-  </div>
-</button>
-`,
-	discription: [
-		// { name: 'name1', info: 'ddd' },
-		// { name: 'name2', info: 'xxx' }
-	]
-};
-
-export const designBtn = {
-	title: '#3. Design Btn',
-	info: '디자인 요소가 들어가 있는 Btn 입니다.<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.<br/><b><i>npm i svelte-hero-icons</i></b>',
-	code: `<button
-  class="w-auto flex items-center rounded-md border border-[#B3BAD0] dark:border-[#434346] dark:bg-[#131316] py-0.5 2xl:py-1.5 2xl:text-xl hover:bg-slate-100 hover:shadow-lg"
->
-  <div class="border-r border-gray-600 px-2 2xl:px-3">
-    <!-- Icon -->
-    <img
-      src="https://i.esdrop.com/d/f/KRQCESGJO3/CRdI3xWEaW.png"
-      alt=""
-      class="h-4 w-4 2xl:h-5 2xl:w-5"
-    />
-  </div>
-  <!-- Select Box -->
-  <div class="px-3 text-gray-600 dark:text-white">text</div>
-</button>
-`,
-	discription: [
-		{ name: 'name1', info: 'ddd' }
+		{ name: 'isDarkMode', info: '전역변수 에 따른 Css Stylte 변경' }
 		// { name: 'name2', info: 'xxx' }
 	]
 };

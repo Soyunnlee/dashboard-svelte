@@ -29,7 +29,7 @@
 		<!-- Content -->
 		{#if $$slots.default}
 			<div
-				class="flex flex-row items-center justify-center space-x-5 rounded border dark:border-gray-600 border-gray-400 py-6"
+				class="flex flex-row items-center justify-center space-x-8 rounded border dark:border-gray-600 border-gray-400 py-6"
 			>
 				<slot />
 			</div>
@@ -38,10 +38,10 @@
 		<CodeBlock
 			language="svelte"
 			{code}
-			class="rounded-md px-2 text-white bg-[#121826] dark:bg-[#13171D] overflow-x-auto"
+			class="rounded-md px-2 text-white bg-[#1c232a] dark:bg-[#13171D] overflow-x-auto scrollbar"
 			style="white-space: pre-wrap"
 		/>
-
+		<!-- 222b35 -->
 		{#if discription.length > 0}
 			<Description {discription} />
 		{/if}

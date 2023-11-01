@@ -15,7 +15,7 @@
 </script>
 
 {#if browser}
-	<div class="{$isDarkMode ? 'bg-[#0E0E0E]' : 'lightbg'} dark:text-gray-300">
+	<div class="{$isDarkMode ? 'bg-[#0E0E0E]' : 'lightbg'} dark:text-gray-300 text-[#191919]">
 		<Dashboard>
 			<slot />
 		</Dashboard>

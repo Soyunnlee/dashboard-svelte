@@ -25,7 +25,7 @@
 	<title>Event</title>
 </svelte:head>
 
-<div class="h-[calc(100vh-60px)] overflow-y-scroll dark:bg-[#0E0E0E] px-8">
+<div class="h-[calc(100vh-60px)] dark:bg-[#0E0E0E] px-8">
 	<section class="px-3 pt-3 py-5">
 		<!-- Intro -->
 		<Intro title="Effect" intro="UI Effect 를 제공합니다." />
@@ -217,18 +217,3 @@
 		</div>
 	</section>
 </div>
-
-<style>
-	::-webkit-scrollbar {
-		width: 8px;
-		/* display: block; */
-	}
-
-	::-webkit-scrollbar-track {
-		background: #615c5c;
-	}
-	::-webkit-scrollbar-thumb {
-		background: #837d7d;
-		border-radius: 40px;
-	}
-</style>
