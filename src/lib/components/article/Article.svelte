@@ -21,7 +21,7 @@
 <div>
 	<article class="space-y-4">
 		<div class="space-y-2">
-			<p class="text-2xl">{title}</p>
+			<p class="text-2xl dark:text-white">{title}</p>
 			<div class="text-base leading-7 text-gray-600 dark:text-gray-400">
 				{@html info}
 			</div>

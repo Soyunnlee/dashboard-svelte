@@ -4,7 +4,7 @@
 </script>
 
 <div class="mb-8">
-	<h2 class="mb-1.5 text-5xl font-medium">{title}</h2>
+	<h2 class="mb-1.5 text-5xl font-medium dark:text-white">{title}</h2>
 	<span class="text-lg leading-7">
 		<p>{@html intro}</p>
 	</span>

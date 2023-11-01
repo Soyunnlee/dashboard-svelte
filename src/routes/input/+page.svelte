@@ -2,16 +2,9 @@
 	//#region Import
 	import { CodeBlock } from '@skeletonlabs/skeleton';
 	import LabelInput from '$lib/components/input/LabelInput.svelte';
-
-	//#endregion
-
-	//#region Property
-	// #endregion
-
-	// #region Variable
-	// #endregion
-
-	// #region Function
+	import Intro from '$lib/components/article/Intro.svelte';
+	import Article from '$lib/components/article/Article.svelte';
+	import { labelInput } from './data';
 	//#endregion
 
 	//#region Gloval Variable
@@ -30,21 +23,42 @@
 	<title>Input</title>
 </svelte:head>
 
-<div class="h-[calc(100vh-60px)] dark:bg-[#0E0E0E] px-8">
+<div class="h-[calc(100vh-60px)] px-8">
 	<section class="mb-3 px-3 py-5">
 		<!-- Intro -->
-		<div class="mb-8">
-			<h2 class="mb-1.5 text-5xl font-medium">Input</h2>
-			<span class="text-lg leading-7 text-gray-300">
-				<p>
-					ID , 암호 , 텍스트, 숫자 등 데이터 입력 작업을 수행하는 사용자 인터페이스를 제공 합니다.
-				</p>
-			</span>
-		</div>
+		<Intro
+			title="Input"
+			intro="ID , 암호 , 텍스트, 숫자 등 데이터 입력 작업을 수행하는 사용자 인터페이스를 제공 합니다."
+		/>
 
 		<!-- Articles -->
 		<div class="space-y-8">
-			<!-- 1. Card Wrap -->
+			<Article
+				title={labelInput.title}
+				info={labelInput.info}
+				code={labelInput.code}
+				discription={labelInput.discription}
+			>
+				<LabelInput placeholder="ID" />
+				<!-- <div
+					class="relative mb-0 rounded-md outline outline-1 outline-gray-300 backdrop-blur-md dark:bg-[#0E0E0E]"
+				>
+					<input
+						placeholder=" "
+						type="text"
+						name="userId"
+						class="block w-full appearance-none rounded-md border-0 bg-transparent p-2 pl-3 text-lg focus:outline-none"
+					/>
+
+					<label
+						class="origin-0 absolute top-1 -z-10 rounded-md duration-300 pt-1.5 pl-2"
+						for="userId"
+					>
+						<span class="dark:bg-[#0E0E0E] duration-0 px-1 bg-inherit"> ID </span>
+					</label>
+				</div> -->
+			</Article>
+			<!-- 1. Label Input -->
 			<article class="space-y-4">
 				<div class="space-y-2">
 					<p class="text-3xl">1. Label Input</p>
@@ -69,7 +83,7 @@
 							console.log(value);
 						}}
 					/> -->
-					<LabelInput />
+					<LabelInput placeholder="ID" />
 				</div>
 
 				<CodeBlock
@@ -316,3 +330,24 @@
 		</div>
 	</section>
 </div>
+
+<style lang="postcss">
+	.outline input:focus-within ~ label,
+	/* 라벨 위로 올라갔을때 색상 */
+	.outline input:not(:placeholder-shown) ~ label {
+		@apply z-0 ml-4 -translate-x-4 -translate-y-4 scale-75 px-0 py-0;
+		/* background-color: #4d505a; */
+	}
+
+	/* Input 자동완성시 백그라운드 컬러 , Text 컬러 */
+	input:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0 0px inset;
+		-webkit-text-fill-color: #ffffff;
+	}
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+		transition: background-color 5000s ease-in-out 0s;
+	}
+</style>
