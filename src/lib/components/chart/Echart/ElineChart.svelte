@@ -7,13 +7,39 @@
 	// #region Handle Click Btn
 	let btnLabels = ['This month', 'Last month', '2 month ago'];
 	let selectedBtn = btnLabels[0];
+	let setData: Record<string, number[][]> = {
+		'This month': [
+			[820, 932, 901, 934, 1290, 1330, 1320],
+			[120, 132, 101, 134, 290, 230, 220],
+			[220, 182, 191, 234, 290, 330, 310]
+		],
+		'Last month': [
+			[320, 332, 301, 334, 390, 330, 320],
+			[120, 132, 101, 134, 290, 230, 220],
+			[820, 932, 901, 934, 1290, 1330, 1320]
+		],
+		'2 month ago': [
+			[220, 182, 191, 234, 290, 330, 310],
+			[820, 932, 901, 934, 1290, 1330, 1320],
+			[120, 132, 101, 134, 290, 230, 220]
+		]
+	};
+
 	function handleButtonClick(item: string) {
 		selectedBtn = item;
+
+		let dataSets = setData[item];
+
+		if (chartControl) {
+			chartControl.setOption({
+				series: [{ data: dataSets[0] }, { data: dataSets[1] }, { data: dataSets[2] }, true]
+			});
+		}
 	}
 	// #endregion
 
 	onMount(() => {
-		const option = {
+		let option = {
 			grid: {
 				left: '8%',
 				right: '1%',
