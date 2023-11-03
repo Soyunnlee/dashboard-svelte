@@ -1,6 +1,6 @@
 <script>
-	import AnimatedLineChart from "./AnimatedLineChart.svelte";
-	import dataset from "./data";
+	import AnimatedLineChart from './AnimatedLineChart.svelte';
+	import dataset from './data';
 
 	let selectedSeries = dataset[0];
 
@@ -14,7 +14,7 @@
 	<!-- 22 -->
 	<div class="  flex justify-center items-center w-[15%]">
 		<!-- <header> -->
-		<nav class="flex flex-col space-y-4 px-5 ">
+		<nav class="flex flex-col space-y-4 px-5">
 			{#each dataset as series}
 				<div class="flex flex-col">
 					<button
@@ -30,7 +30,7 @@
 		<!-- </header> -->
 	</div>
 	<!-- Chart -->
-	<div class="flex flex-grow py-5 ">
+	<div class="flex flex-grow py-5">
 		<img
 			src="https://i.esdrop.com/d/f/KRQCESGJO3/mwRodi5aAn.png"
 			alt=""

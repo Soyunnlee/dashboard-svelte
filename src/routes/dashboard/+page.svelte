@@ -44,9 +44,8 @@
 
 	<!-- 행 2 -->
 	<section class="w-full h-[35%] flex space-x-3 ">
-		<article class="bg-[#141517] rounded-lg w-full pt-1 pb-2 px-2 {style.cardshadow}">
+		<article class="bg-[#141517] rounded-lg w-full pt-1 pb-2 px-2 h-full {style.cardshadow}">
 			<!-- <LineChart/> -->
-			
 			<ElineChart/>
 		</article>
 	</section>
