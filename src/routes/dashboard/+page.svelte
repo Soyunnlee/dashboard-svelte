@@ -5,6 +5,7 @@
 	import MaintenanceCard from './MaintenanceCard.svelte';
 	import LineChart from '$lib/components/chart/LineChart.svelte';
 	import AiError from './AiError.svelte';
+	import ElineChart from '$lib/components/chart/Echart/ElineChart.svelte';
 	const style = {
 		cardshadow: `shadow-inner shadow-gray-600 2xl:shadow-[inset_0_0_10px_#4B5563]`
 	};
@@ -44,7 +45,9 @@
 	<!-- 행 2 -->
 	<section class="w-full h-[35%] flex space-x-3 ">
 		<article class="bg-[#141517] rounded-lg w-full pt-1 pb-2 px-2 {style.cardshadow}">
-			<LineChart/>
+			<!-- <LineChart/> -->
+			
+			<ElineChart/>
 		</article>
 	</section>
 

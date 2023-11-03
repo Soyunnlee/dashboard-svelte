@@ -46,6 +46,7 @@
 	"dependencies": {
 		"@skeletonlabs/skeleton": "^1.7.1",
 		"dayjs": "^1.11.8",
+		"echarts": "^5.4.3",
 		"firebase-tools": "^12.5.1",
 		"highlight.js": "^11.8.0",
 		"highlightjs-svelte": "^1.0.6",
