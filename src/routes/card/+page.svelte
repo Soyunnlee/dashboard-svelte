@@ -147,18 +147,3 @@
 		</div>
 	</section>
 </div>
-
-<style>
-	::-webkit-scrollbar {
-		width: 8px;
-		/* display: block; */
-	}
-
-	::-webkit-scrollbar-track {
-		background: #615c5c;
-	}
-	::-webkit-scrollbar-thumb {
-		background: #837d7d;
-		border-radius: 40px;
-	}
-</style>

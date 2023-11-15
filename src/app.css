@@ -25,6 +25,16 @@
  */
 @tailwind variants;
 
+* {
+	::-webkit-scrollbar {
+		@apply h-2;
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply rounded-[40px] bg-gray-500;
+	}
+}
+
 .btn-blue {
 	@apply rounded hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)];
 	background: linear-gradient(270deg, #66a6ff 0%, #667eea 98.8%);
