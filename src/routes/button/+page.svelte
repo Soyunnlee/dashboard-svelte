@@ -82,11 +82,11 @@
 							}}
 						>
 							<div
-								class="absolute -left-1 -top-0.5 rounded-full bg-[#AE0019] dark:bg-red-700 px-1 py-1"
+								class="absolute -left-[0.2rem] -top-[0.2rem] rounded-full bg-[#e6002f] dark:bg-red-700 px-1 py-1"
 							/>
 
 							<div
-								class="rounded border border-[#B3BAD0] dark:border-gray-700 px-2 py-0.5 hover:bg-slate-100 hover:shadow-lg"
+								class="rounded border border-[#CBCBCB] dark:border-gray-700 px-2 py-0.5 hover:bg-slate-50 dark:hover:bg-transparent"
 							>
 								<Icon class="h-6 w-5 stroke-2 text-indigo-600 2xl:h-7 2xl:w-8" src={Bars3} />
 							</div>
@@ -102,13 +102,16 @@
 							}}
 						>
 							<div
-								class="absolute -left-2 -top-1 inline-flex items-center justify-center rounded bg-[#AE0019] dark:bg-red-700 px-0.5 py-0.5 text-xs leading-none text-white"
+								class="absolute -left-2 -top-1 inline-flex items-center justify-center rounded bg-[#e6002f] dark:bg-red-700 px-0.5 py-0.5 text-xs leading-none text-white"
 							>
 								12
 							</div>
 
+							<!-- <div
+								class="rounded border border-[#CBCBCB] dark:border-gray-700 px-1.5 py-0.5 hover:bg-slate-50 dark:hover:bg-transparent"
+							> -->
 							<div
-								class="rounded border border-[#B3BAD0] dark:border-gray-700 px-1.5 py-0.5 hover:bg-slate-100 hover:shadow-lg"
+								class="rounded border border-[#CBCBCB] dark:border-gray-700 px-1.5 py-0.5 hover:bg-slate-100 hover:shadow-lg"
 							>
 								<Icon class="h-6 w-6  text-indigo-500 " src={EllipsisHorizontal} />
 							</div>
@@ -125,7 +128,7 @@
 				discription={designBtn.discription}
 			>
 				<div class="space-x-9 flex">
-					<!-- 숫자가 있는 Alarm Btn -->
+					<!-- Design Btn -->
 					<button
 						class="w-auto flex items-center rounded-md border border-[#B3BAD0] dark:border-[#434346] dark:bg-[#131316] py-0.5 2xl:py-1.5 2xl:text-xl hover:bg-slate-100 hover:shadow-lg"
 					>
