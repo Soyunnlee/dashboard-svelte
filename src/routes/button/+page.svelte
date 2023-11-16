@@ -88,7 +88,10 @@
 							<div
 								class="rounded border border-[#CBCBCB] dark:border-gray-700 px-2 py-0.5 hover:bg-slate-50 dark:hover:bg-transparent"
 							>
-								<Icon class="h-6 w-5 stroke-2 text-indigo-600 2xl:h-7 2xl:w-8" src={Bars3} />
+								<Icon
+									class="h-6 w-5 stroke-2 text-indigo-700 dark:text-indigo-600 2xl:h-7 2xl:w-8"
+									src={Bars3}
+								/>
 							</div>
 						</button>
 					</div>
@@ -107,13 +110,13 @@
 								12
 							</div>
 
-							<!-- <div
-								class="rounded border border-[#CBCBCB] dark:border-gray-700 px-1.5 py-0.5 hover:bg-slate-50 dark:hover:bg-transparent"
-							> -->
 							<div
-								class="rounded border border-[#CBCBCB] dark:border-gray-700 px-1.5 py-0.5 hover:bg-slate-100 hover:shadow-lg"
+								class="rounded border border-[#CBCBCB] dark:border-gray-700 px-1.5 py-0.5 hover:bg-slate-50 dark:hover:bg-transparent"
 							>
-								<Icon class="h-6 w-6  text-indigo-500 " src={EllipsisHorizontal} />
+								<Icon
+									class="h-6 w-6 text-indigo-600 dark:text-indigo-500"
+									src={EllipsisHorizontal}
+								/>
 							</div>
 						</button>
 					</div>
@@ -130,7 +133,7 @@
 				<div class="space-x-9 flex">
 					<!-- Design Btn -->
 					<button
-						class="w-auto flex items-center rounded-md border border-[#B3BAD0] dark:border-[#434346] dark:bg-[#131316] py-0.5 2xl:py-1.5 2xl:text-xl hover:bg-slate-100 hover:shadow-lg"
+						class="w-auto flex items-center rounded-md border border-[#CBCBCB] dark:border-[#434346] dark:bg-[#131316] py-0.5 2xl:py-1.5 2xl:text-xl hover:bg-slate-50 dark:hover:bg-transparent"
 					>
 						<div class="border-r border-gray-600 px-2 2xl:px-3">
 							<!-- Icon -->

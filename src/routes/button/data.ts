@@ -46,7 +46,7 @@ export const orangeBtn = {
 
 export const alarmBtn = {
 	title: '#2. Alarm Btn_Dot',
-	info: '알람 숫자가 없는 Btn<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.<br/><b><i>npm i svelte-hero-icons</i></b>',
+	info: '알람 숫자가 없는 Btn<br/><b><i>npm i svelte-hero-icons</i></b><br/>',
 	code: `<script>
   import { Icon, Bars3 } from 'svelte-hero-icons';
 </script>
@@ -54,8 +54,8 @@ export const alarmBtn = {
 <button type="button" class="relative">
   <div class="absolute -left-[0.2rem] -top-[0.2rem] rounded-full bg-[#e6002f] dark:bg-red-700 px-1 py-1" />
 
-  <div class="rounded border border-[#CBCBCB] dark:border-gray-700 px-2 py-0.5">
-    <Icon class="h-6 w-5 stroke-2 text-indigo-600 2xl:h-7 2xl:w-8" src={Bars3} />
+  <div class="rounded border border-[#CBCBCB] dark:border-gray-700 px-2 py-0.5 hover:bg-slate-50 dark:hover:bg-transparent">
+    <Icon class="h-6 w-5 stroke-2 text-indigo-700 dark:text-indigo-600 2xl:h-7 2xl:w-8" src={Bars3} />
   </div>
 </button>
 `,
@@ -67,18 +67,18 @@ export const alarmBtn = {
 
 export const alarmNumberBtn = {
 	title: '#2. Alarm Btn_Number',
-	info: '알람 숫자가 있는 Btn<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.<br/><b><i>npm i svelte-hero-icons</i></b>',
+	info: '알람 숫자가 있는 Btn<br/><b><i>npm i svelte-hero-icons</i></b><br/>',
 	code: `<script>
   import { Icon, EllipsisHorizontal } from 'svelte-hero-icons';
 </script>
 
 <button type="button" class="relative">
-  <div class="absolute -left-2 -top-1 inline-flex items-center justify-center rounded bg-red-700 px-0.5 py-0.5 text-xs leading-none text-white">
+  <div class="absolute -left-2 -top-1 inline-flex items-center justify-center rounded bg-[#e6002f] dark:bg-red-700 px-0.5 py-0.5 text-xs leading-none text-white">
     12
   </div>
 
-  <div class="rounded border border-gray-700 px-1.5 py-0.5">
-    <Icon class="h-6 w-6  text-indigo-500 " src={EllipsisHorizontal} />
+  <div class="rounded border border-gray-700 px-1.5 py-0.5 hover:bg-slate-50 dark:hover:bg-transparent">
+    <Icon class="h-6 w-6 text-indigo-600 dark:text-indigo-500" src={EllipsisHorizontal} />
   </div>
 </button>
 `,
@@ -90,9 +90,9 @@ export const alarmNumberBtn = {
 
 export const designBtn = {
 	title: '#3. Design Btn',
-	info: '디자인 요소가 들어가 있는 Btn 입니다.<br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.<br/><b><i>npm i svelte-hero-icons</i></b>',
+	info: '디자인 요소가 들어가 있는 Btn 입니다.<br/><b><i>npm i svelte-hero-icons</i></b>',
 	code: `<button
-  class="w-auto flex items-center rounded-md border border-[#B3BAD0] dark:border-[#434346] dark:bg-[#131316] py-0.5 2xl:py-1.5 2xl:text-xl hover:bg-slate-100 hover:shadow-lg"
+  class="w-auto flex items-center rounded-md border border-[#B3BAD0] dark:border-[#434346] dark:bg-[#131316] py-0.5 2xl:py-1.5 2xl:text-xl hover:bg-slate-50 dark:hover:bg-transparent"
 >
   <div class="border-r border-gray-600 px-2 2xl:px-3">
     <!-- Icon -->
@@ -102,7 +102,7 @@ export const designBtn = {
       class="h-4 w-4 2xl:h-5 2xl:w-5"
     />
   </div>
-  <!-- Select Box -->
+  <!-- Text -->
   <div class="px-3 text-gray-600 dark:text-white">text</div>
 </button>
 `,

@@ -93,3 +93,28 @@ export const designCardRow = {
 		// { name: 'name2', info: 'xxx' }
 	]
 };
+
+export const dentedCard = {
+	title: '# 4. Dented Card',
+	info: 'CardWrap 과 Design Card 를 사용한 곂쳐진 요소의 분리된 카드 입니다.',
+	code: `<!-- z-0 Wrap -->
+<article
+ class="mt-20 rounded-md dark:shadow-[inset_0_0_8px_#4B5563] dark:shadow-gray-600 shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-[#F2F2F7] dark:bg-black h-72 w-[28rem]" >
+ <!-- z-1 Wrap -->
+ <div class="-mt-20 h-full flex justify-center">
+ <!-- Design Card -->
+ <div class=" h-full relative rounded overflow-hidden w-[55%] flex items-center justify-center bg-white"
+	style={$isDarkMode
+		? 'background: linear-gradient(106.15deg, #282828 1.61%, #0B0B0B 93.48%)'
+		: 'background: linear-gradient(106.15deg, #F5FAFF 0.5%, #ffffff 93.48%)'} >
+	Content
+	<!-- UnderLine -->
+	<span class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-opacity-100" />
+  </div>
+ </div>	
+</article>`,
+	discription: [
+		{ name: 'isDarkMode', info: '전역변수 에 따른 Css Stylte 변경' }
+		// { name: 'name2', info: 'xxx' }
+	]
+};
