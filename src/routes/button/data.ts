@@ -107,7 +107,7 @@ export const designBtn = {
 </button>
 `,
 	discription: [
-		{ name: 'name1', info: 'ddd' }
+		// { name: 'name1', info: 'ddd' }
 		// { name: 'name2', info: 'xxx' }
 	]
 };
