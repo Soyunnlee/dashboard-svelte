@@ -166,7 +166,7 @@
 				>
 					<!-- z-1 Wrap -->
 					<div class="-mt-20 h-full flex justify-center">
-						<!-- Card -->
+						<!-- Design Card -->
 						<div
 							class=" h-full relative rounded overflow-hidden w-[55%] flex items-center justify-center bg-white"
 							style={$isDarkMode
@@ -181,7 +181,6 @@
 						</div>
 					</div>
 				</article>
-				<!-- </div> -->
 			</Article>
 		</div>
 	</section>

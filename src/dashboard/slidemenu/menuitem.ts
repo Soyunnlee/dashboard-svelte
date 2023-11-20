@@ -18,17 +18,6 @@ const menu = [
 		link: '/dashboard',
 		isdepthMenu: false
 	},
-	// {
-	// 	title: 'API',
-	// 	icon: CloudArrowDown,
-	// 	link: '/api',
-	// 	isdepthMenu: true,
-	// 	isdepthMenuOpen: false,
-	// 	depthMenu: [
-	// 		{ title: 'bulletin1', link: '/api/bulletin1' },
-	// 		{ title: 'bulletin2', link: '/api/bulletin2' }
-	// 	]
-	// },
 	{
 		title: 'Button',
 		icon: Cube,
@@ -49,14 +38,6 @@ const menu = [
 		depthMenu: [{ title: 'chart1', link: '/admin/chart/chart1' }]
 	},
 	{
-		title: 'Input',
-		icon: PencilSquare,
-		link: '/input',
-		isdepthMenu: true,
-		isdepthMenuOpen: false,
-		depthMenu: [{ title: 'chart1', link: '/admin/chart/chart1' }]
-	},
-	{
 		title: 'Form',
 		icon: QueueList,
 		link: '/form',
@@ -64,7 +45,7 @@ const menu = [
 	},
 	{
 		title: 'Event',
-		icon: CursorArrowRays,
+		icon: ComputerDesktop,
 		link: '/event',
 		isdepthMenu: true,
 		isdepthMenuOpen: false,
@@ -72,38 +53,13 @@ const menu = [
 			{ title: 'Slidemenu', link: '/event/slidemenu' },
 			{ title: 'Modal', link: '/event/modal' }
 		]
+	},
+	{
+		title: 'Effect',
+		icon: CursorArrowRays,
+		link: '/effect',
+		isdepthMenu: false
 	}
-
-	// {
-	// 	title: 'Date Picker',
-	// 	icon: ComputerDesktop,
-	// 	link: '/datepicker'
-	// },
-	// {
-	// 	title: 'Clock',
-	// 	icon: ComputerDesktop,
-	// 	link: '/clock'
-	// },
-	// {
-	// 	title: 'Chart',
-	// 	icon: ComputerDesktop,
-	// 	link: '/chart'
-	// },
-	// {
-	// 	title: 'Table',
-	// 	icon: ComputerDesktop,
-	// 	link: '/table'
-	// },
-	// {
-	// 	title: 'Grid',
-	// 	icon: ComputerDesktop,
-	// 	link: '/grid'
-	// },
-	// {
-	// 	title: 'Report',
-	// 	icon: ComputerDesktop,
-	// 	link: '/report'
-	// }
 ];
 
 export default menu;

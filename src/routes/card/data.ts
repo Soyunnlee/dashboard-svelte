@@ -11,7 +11,7 @@ class="rounded-xl bg-white dark:bg-[#141517] dark:shadow-[inset_0_0_10px_#4B5563
 };
 
 export const titleCard = {
-	title: '# 2. Title Card',
+	title: '# 2-1. Title Card',
 	info: 'Title 이 있는 카드 입니다.',
 	code: `<article class="h-56 w-72 rounded-xl dark:bg-[#141517] dark:shadow-inner dark:shadow-gray-600 dark:2xl:shadow-[inset_0_0_10px_#4B5563] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex flex-col">
  <!-- Title -->
@@ -33,7 +33,7 @@ export const titleCard = {
 };
 
 export const readabilityCard = {
-	title: '# 2-1. Readability Card',
+	title: '# 2-2. Readability Card',
 	info: 'Theme 와 기본 CardWrap Color 를 고려해 조화를 이루면서도 시각적으로 구별될 수 있는 가독성 카드 입니다.',
 	code: `<article class="rounded-xl dark:shadow-inner dark:shadow-gray-600 dark:2xl:shadow-[inset_0_0_10px_#4B5563] shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-[#EEF8FF] dark:bg-[#0a1631] h-56 w-72 flex flex-col">
  <!-- Title -->
@@ -55,7 +55,7 @@ export const readabilityCard = {
 };
 
 export const designCardCol = {
-	title: '# 3. Design Card_Col',
+	title: '# 3-1. Design Card_Col',
 	info: 'Design 요소가 들어가 있는 카드 입니다.',
 	code: `<article class="rounded-xl flex justify-center h-56 w-56 shadow-[0_5px_10px_rgb(0,0,0,0.2)]">
  <div class="rounded-xl relative overflow-hidden border-gray-100 w-full h-full bg-white"
@@ -75,7 +75,7 @@ export const designCardCol = {
 };
 
 export const designCardRow = {
-	title: '# 3. Design Card_Row',
+	title: '# 3-2. Design Card_Row',
 	info: 'Design 요소가 들어가 있는 카드 입니다.',
 	code: `<article class="rounded-xl flex justify-center h-40 w-64 shadow-[0_5px_10px_rgb(0,0,0,0.2)]" >
  <div class="rounded-xl relative overflow-hidden border-gray-100 w-full h-full bg-white"

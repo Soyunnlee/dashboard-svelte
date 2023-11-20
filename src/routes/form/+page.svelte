@@ -4,8 +4,9 @@
 	import Article from '$lib/components/article/Article.svelte';
 	import Intro from '$lib/components/article/Intro.svelte';
 	import LoginForm from '$lib/components/form/LoginForm.svelte';
+	import LabelInput from '$lib/components/input/LabelInput.svelte';
 
-	import { form } from './data';
+	import { form, labelInput } from './data';
 </script>
 
 <svelte:head>
@@ -27,7 +28,17 @@
 		/>
 		<!-- Articles -->
 		<div class="space-y-8">
-			<!-- 1. Card Wrap -->
+			<!-- 1. Label Input -->
+			<Article
+				title={labelInput.title}
+				info={labelInput.info}
+				code={labelInput.code}
+				discription={labelInput.discription}
+			>
+				<LabelInput placeholder="ID" labelColor="dark:bg-[#0E0E0E]" />
+			</Article>
+
+			<!-- 2. Form -->
 			<Article title={form.title} info={form.info} code={form.code} discription={form.discription}>
 				<LoginForm />
 			</Article>

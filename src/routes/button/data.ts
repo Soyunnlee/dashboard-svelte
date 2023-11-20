@@ -1,5 +1,5 @@
 export const blueBtn = {
-	title: '#1. Blue Button ',
+	title: '#1-1. Blue Button ',
 	info: 'Login, Clear , Susses 등 <br/>추가 여백이나 width , padding 조절이 필요할 수 있습니다.',
 	code: `<button
   style="background: linear-gradient(270deg, #66a6ff 0%, #667eea 98.8%);"
@@ -45,7 +45,7 @@ export const orangeBtn = {
 };
 
 export const alarmBtn = {
-	title: '#2. Alarm Btn_Dot',
+	title: '#2-1. Alarm Btn_Dot',
 	info: '알람 숫자가 없는 Btn<br/><b><i>npm i svelte-hero-icons</i></b><br/>',
 	code: `<script>
   import { Icon, Bars3 } from 'svelte-hero-icons';
@@ -66,7 +66,7 @@ export const alarmBtn = {
 };
 
 export const alarmNumberBtn = {
-	title: '#2. Alarm Btn_Number',
+	title: '#2-2. Alarm Btn_Number',
 	info: '알람 숫자가 있는 Btn<br/><b><i>npm i svelte-hero-icons</i></b><br/>',
 	code: `<script>
   import { Icon, EllipsisHorizontal } from 'svelte-hero-icons';
