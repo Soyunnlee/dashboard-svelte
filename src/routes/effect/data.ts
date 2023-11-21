@@ -53,3 +53,27 @@ export const redBlinkDot = {
 		// { name: 'name1', info: 'ddd' },
 	]
 };
+export const errorBorderEffect = {
+	title: '# 1-2. Error Border Effect',
+	info: 'Websoket 또는 Chart, 데이터 신호에 따른 Error Ui 효과',
+	code: `<div class="relative w-56 h-14">
+ <div class="absolute z-10 animate-pulse w-full h-full" style="box-shadow: 0 0 0 2px #FF0000 inset; filter:blur(2px)" />
+ <div class="w-full h-full flex justify-center items-center">Content</div>
+</div>`,
+	discription: [
+		// { name: 'name1', info: 'ddd' },
+	]
+};
+
+export const errorBorderInsetEffect = {
+	title: '# 1-2. Error Border Inset',
+	info: 'Websoket 또는 Chart, 데이터 신호에 따른 Error Ui 효과',
+	code: `<div class="relative w-52 h-12">
+ <div class="absolute -inset-1 shadow-[inset_0_0_15px_#FF0000] animate-pulse flex justify-center items-center">
+  Content
+ </div>
+</div>`,
+	discription: [
+		// { name: 'name1', info: 'ddd' },
+	]
+};

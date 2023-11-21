@@ -3,7 +3,7 @@
 	import Intro from '$lib/components/article/Intro.svelte';
 	import { CodeBlock } from '@skeletonlabs/skeleton';
 	import { Icon, EllipsisHorizontal, Bars3 } from 'svelte-hero-icons';
-	import { whiteBlinkDot, redBlinkDot } from './data';
+	import { whiteBlinkDot, redBlinkDot, errorBorderEffect, errorBorderInsetEffect } from './data';
 
 	// #region Blink Interval Funtion
 	let blinkInterval = 1;
@@ -16,20 +16,12 @@
 	let i = 0;
 	let blinkEffectList = [whiteBlinkDot, redBlinkDot];
 
-	// #region style
-	export const style = {
-		descriptionWrap: `flex flex-row space-x-1 py-4`,
-		descriptionTitleWrap: `text-left w-[15%] border-r-[0.08rem] border-gray-400  flex items-center justify-center`,
-		// bg-[#ABD2C9] text-[#195239]
-		descriptionTitle: `rounded px-1.5  text-sm bg-[#aad3cb] text-emerald-800`,
-		description: `pl-3 leading-7`,
-		codeBlock: `overflow-x-auto rounded-md bg-gray-800 px-5 py-2 text-white`
-	};
-	// #endregion
+	let k = 0;
+	let errorList = [errorBorderEffect, errorBorderInsetEffect];
 </script>
 
 <svelte:head>
-	<title>Event</title>
+	<title>Effect</title>
 </svelte:head>
 
 <div class="h-[calc(100vh-60px)] dark:bg-[#0E0E0E] px-8">
@@ -100,7 +92,42 @@
 					</div>
 				</Article>
 
-				<!--  -->
+				<Article
+					title={errorList[k].title}
+					info={errorList[k].info}
+					code={errorList[k].code}
+					discription={errorList[k].discription}
+				>
+					<!--Error Border Effect-->
+					<div
+						class="relative w-56 h-14"
+						on:click={() => {
+							k = 0;
+						}}
+						role="presentation"
+					>
+						<div
+							class="absolute z-10 animate-pulse w-full h-full"
+							style="box-shadow: 0 0 0 2px #FF0000 inset; filter:blur(2px)"
+						/>
+						<div class="w-full h-full flex justify-center items-center">Content</div>
+					</div>
+
+					<!--Error Border Inset -->
+					<div
+						class="relative w-52 h-12"
+						on:click={() => {
+							k = 1;
+						}}
+						role="presentation"
+					>
+						<div
+							class="absolute -inset-1 shadow-[inset_0_0_15px_#FF0000] animate-pulse flex justify-center items-center"
+						>
+							Content
+						</div>
+					</div>
+				</Article>
 			</article>
 		</div>
 	</section>

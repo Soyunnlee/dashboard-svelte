@@ -44,17 +44,6 @@ const menu = [
 		isdepthMenu: false
 	},
 	{
-		title: 'Event',
-		icon: ComputerDesktop,
-		link: '/event',
-		isdepthMenu: true,
-		isdepthMenuOpen: false,
-		depthMenu: [
-			{ title: 'Slidemenu', link: '/event/slidemenu' },
-			{ title: 'Modal', link: '/event/modal' }
-		]
-	},
-	{
 		title: 'Effect',
 		icon: CursorArrowRays,
 		link: '/effect',
