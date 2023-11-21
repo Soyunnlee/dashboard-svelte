@@ -62,7 +62,7 @@
 				>
 					<!-- Title -->
 					<div
-						class="py-4 border-b border-[##DBDBDB] dark:border-none"
+						class="py-4 border-b border-[#DBDBDB] dark:border-none"
 						style={$isDarkMode
 							? 'background: radial-gradient(circle, rgba(45,48,52,0.7399553571428572) 4%, rgba(20,21,23,0) 50%, rgba(20,21,23,0) 100%);'
 							: ''}

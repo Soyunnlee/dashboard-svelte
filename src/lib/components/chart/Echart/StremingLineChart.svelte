@@ -35,9 +35,9 @@
 				// },
 				grid: {
 					left: '0%',
-					right: '1%',
-					bottom: '0%',
-					top: '0%',
+					right: '0.5%',
+					bottom: '5%',
+					top: '10%',
 					containLabel: true
 				},
 				tooltip: {

@@ -50,9 +50,9 @@
 
 	
 	<!-- 행 3 -->
-	<section class="w-full h-[calc(100%-65%-28px)] flex space-x-0 rounded-xl ">
+	<section class="w-full h-[calc(100%-65%-28px)] flex">
     <article
-	class="relative px-4 flex  rounded-lg w-full flex-col pb-3  {style.cardshadow} "
+	class="flex  rounded-lg w-full flex-col {style.cardshadow} "
 >
 <AiError />
 
