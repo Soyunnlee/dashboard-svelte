@@ -1,6 +1,6 @@
 <script lang="ts">
 	//#region Import
-	import { Icon, ChevronRight, ArrowSmallRight } from 'svelte-hero-icons';
+	import { Icon, ChevronRight } from 'svelte-hero-icons';
 	import { isSlideMenuOpen } from '../provider/store';
 	import { page } from '$app/stores';
 	// 메뉴 아이템 ts
@@ -18,8 +18,6 @@
 		open: `lg:ease-in lg:h-auto lg:opacity-100 lg:transition-all`
 	};
 	//#endregion
-
-	let isHovered = false;
 </script>
 
 <div class=" h-full overflow-auto py-5 dark:bg-[#16191E] bg-white">
@@ -54,22 +52,6 @@
 							>
 								<Icon class="h-8 w-8 " src={item.icon} />
 							</div>
-
-							<!--  -->
-							{#if $isSlideMenuOpen === false}
-								<!-- content here -->
-								<div class="animate-bounce">
-									{#if $page.route.id?.includes(item.link) && isHovered}
-										<!-- content here -->
-										{#if isHovered}
-											<!-- content here -->
-											<Icon src={ArrowSmallRight} class="w-7 h-5 stroke-2" />
-										{/if}
-									{/if}
-								</div>
-							{/if}
-
-							<!--  -->
 
 							<!-- Slide Menu 오픈시 타이틀 토글 기능  -->
 							<div

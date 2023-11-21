@@ -7,7 +7,7 @@
 	import AiError from './AiError.svelte';
 	import ElineChart from '$lib/components/chart/Echart/ElineChart.svelte';
 	const style = {
-		cardshadow: `shadow-inner shadow-gray-600 2xl:shadow-[inset_0_0_10px_#4B5563]`
+		cardshadow: `bg-white dark:bg-[#141517] dark:shadow-[inset_0_0_11px_#4B5563] dark:shadow-gray-600 shadow-[0_3px_10px_rgb(0,0,0,0.2)]`
 	};
 	//#endrigion
 </script>
@@ -17,23 +17,21 @@
 </svelte:head>
 
 <!-- prettier-ignore -->
-<div class="p-4 px-8 max-w-full h-[calc(100vh-60px)] overflow-auto text-white dark:bg-[#0E0E0E] space-y-3">
+<div class="p-4 px-8 h-[calc(100vh-60px)] dark:bg-[#0E0E0E] space-y-3 ">
 	<!-- 행 1 -->
-	<section class="w-full h-[30%] flex space-x-3 overflow-hidden">
+	<section class="w-full h-[30%] flex space-x-3 ">
 		<!-- 영역 1 -->
 		<!-- 로봇 상태 -->
-		<article class="w-[18%] bg-[#141517] rounded-xl {style.cardshadow}">
+		<article class="w-[18%] rounded-xl {style.cardshadow}">
 			<StatusCard />
 		</article>
-
-		<!-- <LinkedChart { data } type="line" /> -->
 	
 		<!-- 가동율 -->
-		<article class="bg-[#141517] w-[25%] rounded-xl {style.cardshadow}">
+		<article class="w-[25%] rounded-xl {style.cardshadow}">
 			<OperationCard/>
 		</article>
 		<!-- 생산 -->
-		<article class="bg-[#141517] w-[28%] rounded-lg mt-10 h-auto {style.cardshadow}">
+		<article class=" w-[28%] rounded-lg mt-10 h-auto {style.cardshadow}">
 			<ProductCard/>
 		</article>
 
@@ -54,7 +52,7 @@
 	<!-- 행 3 -->
 	<section class="w-full h-[calc(100%-65%-28px)] flex space-x-0 rounded-xl ">
     <article
-	class="relative px-4 bg-[#141517] flex  divide-gray-600 rounded-lg w-full flex-col pb-3 shadow-inner shadow-gray-600 drop-shadow-lg {style.cardshadow} "
+	class="relative px-4 flex  rounded-lg w-full flex-col pb-3  {style.cardshadow} "
 >
 <AiError />
 

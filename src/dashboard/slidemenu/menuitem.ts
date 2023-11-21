@@ -22,20 +22,22 @@ const menu = [
 		title: 'Button',
 		icon: Cube,
 		link: '/button',
-		isdepthMenu: true,
-		depthMenu: [
-			{ title: 'Buttons', link: '/button/buttons' },
-			{ title: 'designbtn', link: '/button/designbtn' },
-			{ title: 'alarmbtn', link: '/button/alarmbtn' }
-		]
+		// isdepthMenu: true,
+		// depthMenu: [
+		// 	{ title: 'Buttons', link: '/button/buttons' },
+		// 	{ title: 'designbtn', link: '/button/designbtn' },
+		// 	{ title: 'alarmbtn', link: '/button/alarmbtn' }
+		// ]
+		isdepthMenu: false
 	},
 	{
 		title: 'Card',
 		icon: Identification,
 		link: '/card',
-		isdepthMenu: true,
-		isdepthMenuOpen: false,
-		depthMenu: [{ title: 'chart1', link: '/admin/chart/chart1' }]
+		// isdepthMenu: true,
+		// isdepthMenuOpen: false,
+		// depthMenu: [{ title: 'chart1', link: '/admin/chart/chart1' }]
+		isdepthMenu: false
 	},
 	{
 		title: 'Form',

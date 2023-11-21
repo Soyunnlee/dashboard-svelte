@@ -2,6 +2,7 @@
 	//#region Import
 	import BlinkEffect from '$lib/components/BlinkEffect.svelte';
 	import ChartTitle from '$lib/components/ChartTitle.svelte';
+	import StremingLineChart from '$lib/components/chart/Echart/StremingLineChart.svelte';
 	//#endregion
 	import { LinkedChart, LinkedLabel, LinkedValue } from 'svelte-tiny-linked-charts';
 
@@ -64,7 +65,8 @@
 		<div class="flex-grow h-full border">
 			<!-- Chart 영역 -->
 			<!-- <LinkedChart {data} type="line" lineColor="#4355db" fill="var(--text-color)" {values} /> -->
-			<LinkedChart type="line" lineColor="#4355db" fill="var(--text-color)" {data} />
+			<!-- <LinkedChart type="line" lineColor="#4355db" fill="var(--text-color)" {data} /> -->
+			<StremingLineChart />
 		</div>
 	</div>
 </div>
